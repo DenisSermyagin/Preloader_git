@@ -1,0 +1,112 @@
+body {
+  background: white;
+  overflow: hidden;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#center {
+  display: inline-block;
+  width: 600px;
+  height: 40px;
+  background: white;
+  border: 2px solid #cfd8e8;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0.81,0.85,0.91,0.2);
+  margin-top: 20%;
+  z-index: 1;
+}
+
+.referal-img {
+  visibility: hidden;
+  position: relative;
+  width: 40px;
+  margin: 0 -200% 0 0;
+  z-index: 2;
+}
+
+#main {
+  width: 200px;
+  height: 40px;
+  background: #FFD22E;
+  float: left;
+}
+
+.row {
+  height: 10px;
+  width: 400px;
+  float: left;
+  display: inherit;
+}
+
+.sq {
+  height: 10px;
+  width: 133px;
+  float: left;
+  background: white;
+}
+
+@keyframes progress {
+  0% {
+    opacity: 0%;
+    background: #FFD22E;
+  }
+  50% {
+    opacity: 50%;
+    background: #FFD22E;
+  }
+  100% {
+    opacity: 100%;
+    background: #FFD22E;
+  }
+}
+
+.first {
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.second {
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.third {
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes startbutton {
+  0% {
+    visibility: visible;
+    opacity: 0%;
+  }
+  50% {
+    visibility: visible;
+    opacity: 50%;
+  }
+  100% {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+.referal-img {
+  animation-name: startbutton;
+  animation-duration: 1s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
