@@ -87,26 +87,3 @@ body {
   animation-play-state: running;
   animation-fill-mode: forwards;
 }
-
-@keyframes startbutton {
-  0% {
-    visibility: visible;
-    opacity: 0%;
-  }
-  50% {
-    visibility: visible;
-    opacity: 50%;
-  }
-  100% {
-    visibility: visible;
-    opacity: 100%;
-  }
-}
-
-.referal-img {
-  animation-name: startbutton;
-  animation-duration: 1s;
-  animation-delay: 3.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
